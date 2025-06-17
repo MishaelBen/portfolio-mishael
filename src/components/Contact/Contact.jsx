@@ -1,4 +1,5 @@
 import React from "react";
+import UserForm from "../../UserForm";
 
 import styles from "./Contact.module.css";
 import { getImageUrl } from "../../utils";
@@ -25,6 +26,11 @@ export const Contact = () => {
         <li className={styles.link}>
           <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
           <a href="https://github.com/MishaelBen">github.com/MishaelBen</a>
+        </li>
+        <li>
+          
+      <UserForm />
+    
         </li>
       </ul>
     </footer>
