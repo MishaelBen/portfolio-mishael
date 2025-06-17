@@ -7,12 +7,13 @@ export default function UserForm() {
   const handleSubmit = (e) => {           // ✅ handleSubmit instead of handlesubmit (naming is flexible but keep consistent)
     e.preventDefault();
     console.log("Submitted:", { name, email });
+    window.location.reload();
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="name">Name:</label>
+        <label htmlFor="nam">Name:</label>
         <input
           type="text"
           id="name"
@@ -32,7 +33,8 @@ export default function UserForm() {
           required
         />
       </div>
-
+     
+ 
       <button type="submit">Submit</button>
     </form>
   );
